@@ -1,6 +1,11 @@
+import java.io.File;
+
+import org.apache.commons.codec.binary.Hex;
+import org.apache.commons.io.FileUtils;
+
 
 public class SaveSlot {
-	private byte[] saveSlot;
+	private byte[] saveSlot = new byte[0];
 	private int saveSlotIndex;
 	
 	
@@ -14,6 +19,7 @@ public class SaveSlot {
 		return saveSlot;
 	}
 	public void setSaveSlot(byte[] saveSlot) {
+		
 		this.saveSlot = saveSlot;
 	}
 	public int getSaveSlotIndex() {
